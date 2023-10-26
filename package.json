@@ -1,0 +1,16 @@
+{
+    "name": "accordion",
+    "scripts": {
+        "dev": "parcel src/index.html",
+        "build": "parcel build src/index.html",
+        "format": "yarn prettier --write ."
+    },
+    "devDependencies": {
+        "@parcel/transformer-sass": "2.9.3",
+        "install": "^0.13.0",
+        "parcel": "^2.9.3",
+        "postcss": "^8.4.31",
+        "prettier": "3.0.3",
+        "tailwindcss": "^3.3.3"
+    }
+}
