@@ -7,7 +7,7 @@ const questions = [
     
     {
         id: 2,
-        title: 'Как зарегистрироватться на Госуслугах?',
+        title: 'Как зарегистрироваться на Госуслугах?',
         answer: 'Онлайн через банк — 10 минут, Лично в центре обслуживания — от 15 минут, При помощи номера телефона и электронной почты.'
     },
 
@@ -52,18 +52,18 @@ function renderQuestions() {
             questionsList.innerHTML += `
 
             <div class="my-5 px-1 py-3 bg-indigo-400 border border-solid border-lime-500 rounded-lg flex justify-between items-center">
-                <p class="text-lg">${question.title}</p>
+                <p class="text-sm md:text-lg">${question.title}</p>
             
-                <svg id="openDescription-${question.id}" class="w-6 h-6 rotate-45" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <svg id="openDescription-${question.id}" class="w-4 h-4 md:w-6 md:h-6 rotate-45" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
 
-                <svg id="closeDescription-${question.id}" class="w-6 h-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <svg id="closeDescription-${question.id}" class="w-4 h-4 md:w-6 md:h-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </div>
             
-            <div id="description-${question.id}" class="px-1 py-2 hidden text-md">
+            <div id="description-${question.id}" class="px-1 py-2 hidden text-xs md:text-md">
                 <p>${question.answer}</p>
             </div>`
         })
