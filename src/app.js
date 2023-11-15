@@ -51,19 +51,19 @@ function renderQuestions() {
         questions.forEach((question) => {
             questionsList.innerHTML += `
 
-            <div class="my-5 px-1 py-3 bg-indigo-400 border border-solid border-lime-500 rounded-lg flex justify-between items-center">
-                <p class="text-sm md:text-lg">${question.title}</p>
+            <div class="my-5 px-1 py-3 bg-indigo-500 rounded-lg flex justify-between items-center">
+                <p class="text-white text-sm md:text-lg">${question.title}</p>
             
-                <svg id="openDescription-${question.id}" class="w-4 h-4 md:w-6 md:h-6 rotate-45" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <svg id="openDescription-${question.id}" class="text-white w-4 h-4 rotate-45 md:w-6 md:h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
 
-                <svg id="closeDescription-${question.id}" class="w-4 h-4 md:w-6 md:h-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <svg id="closeDescription-${question.id}" class="text-white w-4 h-4 hidden md:w-6 md:h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </div>
             
-            <div id="description-${question.id}" class="px-1 py-2 hidden text-xs md:text-md">
+            <div id="description-${question.id}" class="px-1 py-2 hidden text-gray-600 text-xs md:text-md">
                 <p>${question.answer}</p>
             </div>`
         })
